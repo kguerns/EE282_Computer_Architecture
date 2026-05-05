@@ -9,3 +9,14 @@ cd ee282_s25_pa1
 cd pa1/
 ./zsim.sh -a blackscholes -b wide -c 4
 ```
+
+## Configure Git on VM
+```
+sudo apt-get update
+sudo apt-get install git
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+ssh-keygen -t ed25519 -C "your.email@example.com"
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com      // test connection
+```
