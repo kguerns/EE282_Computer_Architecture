@@ -20,3 +20,9 @@ ssh-keygen -t ed25519 -C "your.email@example.com"
 cat ~/.ssh/id_ed25519.pub
 ssh -T git@github.com      // test connection
 ```
+```
+// Inside ee282_s25_pa1/
+git init
+git remote add origin git@github.com:kguerns/EE282_Computer_Architecture.git
+git pull origin main --allow-unrelated-histories
+```
